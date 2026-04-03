@@ -1,0 +1,47 @@
+/* Base reset & global styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0704;
+  font-family: 'Crimson Text', serif;
+}
+
+/* Custom scrollbar (for modal content if needed) */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0704;
+}
+::-webkit-scrollbar-thumb {
+  background: #6b3a15;
+  border-radius: 2px;
+}
+
+/* Code input styling */
+.code-input {
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.8rem;
+  letter-spacing: 0.4em;
+  background: #0a0704;
+  border: 1px solid #6b3a15;
+  color: #ff8c00;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.code-input:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
